@@ -1,0 +1,25 @@
+name: CI (modo fake, sem chave)
+
+# Roda em todo push e pull request. NUNCA troque para pull_request_target:
+# ele expõe segredos a código vindo de forks.
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    env:
+      MODO: fake
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Instalar dependências
+        run: uv sync
+      - name: Estilo (ruff)
+        run: uv run ruff check .
+      - name: Testes (sem custo)
+        run: uv run pytest -m "not openai" -q

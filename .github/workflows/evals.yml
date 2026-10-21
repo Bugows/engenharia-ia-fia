@@ -1,0 +1,42 @@
+name: Evals com OpenAI (manual)
+
+# Rode em Actions -> "Evals com OpenAI (manual)" -> Run workflow.
+# Só funciona no SEU fork se VOCÊ cadastrou o secret OPENAI_API_KEY em
+# Settings -> Secrets and variables -> Actions. Secrets não passam para forks.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evals:
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      MODO: openai
+    steps:
+      - name: Verificar chave
+        if: env.OPENAI_API_KEY == ''
+        run: |
+          echo "::warning::Secret OPENAI_API_KEY não configurado neste repositório. Nada a fazer."
+          exit 0
+      - uses: actions/checkout@v4
+        if: env.OPENAI_API_KEY != ''
+      - uses: astral-sh/setup-uv@v6
+        if: env.OPENAI_API_KEY != ''
+      - name: Instalar
+        if: env.OPENAI_API_KEY != ''
+        run: uv sync
+      - name: Teste de integração
+        if: env.OPENAI_API_KEY != ''
+        run: uv run pytest -m openai -q
+      - name: Golden dataset (Aula 4)
+        if: env.OPENAI_API_KEY != ''
+        run: uv run python aulas/aula_04_avaliacao/01_rodar_golden.py
+      - name: Publicar relatório
+        if: env.OPENAI_API_KEY != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: relatorio-evals
+          path: saidas/

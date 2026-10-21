@@ -1,0 +1,11 @@
+.env
+.env.*
+.venv
+.git
+saidas
+aulas
+docs
+tests
+projeto_final
+**/__pycache__
+**/.ipynb_checkpoints

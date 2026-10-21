@@ -1,0 +1,38 @@
+# Instalação: uv run pre-commit install   (o "make instalar" já faz isso)
+# Rodar em tudo: uv run pre-commit run --all-files
+# Atualizar versões: uv run pre-commit autoupdate
+repos:
+  - repo: local
+    hooks:
+      - id: bloquear-chave-openai
+        name: bloquear chave de API (sk-...)
+        language: pygrep             # regex nativa do pre-commit: rápida e sem downloads
+        entry: 'sk-(proj-)?[A-Za-z0-9_\-]{20,}'
+        exclude: '^(uv\.lock|requirements\.txt)$'
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: detect-private-key
+      - id: check-added-large-files
+        args: [--maxkb=1000]
+      - id: check-yaml
+      - id: end-of-file-fixer
+        exclude: '\.ipynb$'
+
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.7.1
+    hooks:
+      - id: nbstripout        # remove saídas de notebooks (onde chaves costumam vazar)
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.17.1
+    hooks:
+      - id: ruff-check
+        args: [--fix]
+
+# Opcional (varredura mais completa, baixa o Go na primeira execução):
+#  - repo: https://github.com/gitleaks/gitleaks
+#    rev: v8.21.2
+#    hooks:
+#      - id: gitleaks

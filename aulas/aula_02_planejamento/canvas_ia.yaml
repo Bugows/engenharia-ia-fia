@@ -1,0 +1,34 @@
+# AI Canvas — Assistente da Padaria Pão Nosso
+# Valide com: uv run python aulas/aula_02_planejamento/03_validar_canvas.py
+
+projeto: Assistente de WhatsApp da Padaria Pão Nosso
+problema: >
+  40% das 3.000 mensagens mensais do WhatsApp são perguntas repetidas (horário, preço, entrega),
+  e a equipe do balcão perde cerca de 150 horas por mês respondendo.
+usuarios:
+  - clientes do bairro
+  - atendentes do balcão
+  - gerente (Dona Cida), que aprova encomendas grandes
+dados:
+  - dados/padaria/cardapio.md
+  - dados/padaria/faq.md
+  - dados/padaria/politicas.md
+tarefa_da_ia: >
+  Responder dúvidas frequentes citando a fonte, registrar encomendas com aprovação humana
+  e encaminhar reclamações para a gerente.
+metrica_sucesso: ">= 80% de acerto no golden dataset e -30% no tempo de atendimento em 60 dias"
+riscos:
+  - alucinar preço ou horário
+  - prompt injection pedindo desconto
+  - vazar dados pessoais de clientes
+  - custo de tokens sair do controle
+plano_b_sem_ia: Cardápio fixo em mensagem automática + atendente humano no horário comercial
+
+numeros:
+  conversas_por_mes: 3000
+  minutos_economizados_por_conversa: 3
+  custo_hora_atendente_brl: 25.0
+  tokens_entrada_por_conversa: 2500
+  tokens_saida_por_conversa: 300
+  custo_fixo_mensal_brl: 150.0      # hospedagem, monitoramento, número de WhatsApp
+  cotacao_dolar: 5.50
