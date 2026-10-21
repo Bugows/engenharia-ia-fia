@@ -7,6 +7,9 @@
   "containerEnv": {
     "UV_LINK_MODE": "copy"
   },
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:/home/vscode/.local/bin"
+  },
   "postCreateCommand": "pip install --user uv && ~/.local/bin/uv sync && ~/.local/bin/uv run pre-commit install",
   "postAttachCommand": "~/.local/bin/uv run python -m assistente_ia.config || true",
   "secrets": {
