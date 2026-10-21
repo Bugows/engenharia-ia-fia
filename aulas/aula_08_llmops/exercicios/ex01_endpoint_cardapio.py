@@ -14,7 +14,7 @@ from fastapi.testclient import TestClient
 from assistente_ia.domain import padaria
 from assistente_ia.exercicios import verificar
 
-app = FastAPI(title="Cardápio Pão Nosso")
+app = FastAPI(title="Cardápio Peter Pão")
 
 
 @app.get("/cardapio")

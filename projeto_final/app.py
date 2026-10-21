@@ -1,4 +1,4 @@
-"""Projeto Final — ponto de partida: o Assistente Corporativo Pão Nosso S.A. no terminal.
+"""Projeto Final — ponto de partida: o Assistente Corporativo Peter Pão S.A. no terminal.
 
 Como rodar:
     uv run python projeto_final/app.py
@@ -89,7 +89,7 @@ MENU = {
 }
 
 if __name__ == "__main__":
-    console.print(f"[bold]Assistente Corporativo Pão Nosso S.A.[/]\n[dim]{descrever_ambiente()}[/]\n")
+    console.print(f"[bold]Assistente Corporativo Peter Pão S.A.[/]\n[dim]{descrever_ambiente()}[/]\n")
     while True:
         for chave, (rotulo, _) in MENU.items():
             console.print(f"  {chave}) {rotulo}")

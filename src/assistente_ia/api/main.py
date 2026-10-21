@@ -21,7 +21,7 @@ from assistente_ia.container import (
 )
 
 app = FastAPI(
-    title="Assistente Pão Nosso",
+    title="Assistente Peter Pão",
     description="API do curso Engenharia de IA (FIA): RAG, agente e custos.",
     version=__version__,
 )

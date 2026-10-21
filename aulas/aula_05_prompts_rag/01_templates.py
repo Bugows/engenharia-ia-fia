@@ -18,7 +18,7 @@ template = ChatPromptTemplate.from_messages(
     [
         (
             "system",
-            "Você escreve mensagens de WhatsApp para a Padaria Pão Nosso.\n"
+            "Você escreve mensagens de WhatsApp para a Padaria Peter Pão.\n"
             "Regras: no máximo 2 frases; tom {tom}; termine com uma pergunta ao cliente.\n"
             "Exemplo de mensagem boa: 'Oi, Rita! Seu bolo de rolo fica pronto às 15h. Quer que a gente separe um café também?'",
         ),

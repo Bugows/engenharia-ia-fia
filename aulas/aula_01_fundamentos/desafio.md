@@ -1,6 +1,6 @@
 # Desafio da Aula 1 — CordelLLM
 
-A Padaria Pão Nosso vai participar da Festa Junina do bairro e quer um atendente que responda em **versos de cordel**.
+A Padaria Peter Pão vai participar da Festa Junina do bairro e quer um atendente que responda em **versos de cordel**.
 
 ## Missão
 1. Crie a classe `CordelLLM` (em um arquivo novo, `aulas/aula_01_fundamentos/desafio_cordel.py`).

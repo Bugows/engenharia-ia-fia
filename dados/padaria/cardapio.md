@@ -1,4 +1,4 @@
-# Cardápio da Padaria Pão Nosso
+# Cardápio da Padaria Peter Pão
 
 ## Pães e salgados
 - Pão francês: R$ 0,90 a unidade. Fornadas às 6h, 11h e 16h.

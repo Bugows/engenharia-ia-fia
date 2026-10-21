@@ -1,4 +1,4 @@
-# Políticas da Padaria Pão Nosso
+# Políticas da Padaria Peter Pão
 
 ## Encomendas
 Encomendas precisam de no mínimo 24 horas de antecedência.

@@ -82,7 +82,7 @@ def criar_grafo_atendimento(
     def tratar_reclamacao(estado: EstadoAtendimento) -> EstadoAtendimento:
         resposta = llm.responder(
             [
-                Mensagem("system", "Você é da Padaria Pão Nosso. Peça desculpas com empatia em 2 frases e diga que a gerente Dona Cida vai retornar em até 1 hora."),
+                Mensagem("system", "Você é da Padaria Peter Pão. Peça desculpas com empatia em 2 frases e diga que a gerente Dona Cida vai retornar em até 1 hora."),
                 Mensagem("user", estado["pergunta"]),
             ]
         )

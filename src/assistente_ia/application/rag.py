@@ -14,7 +14,7 @@ from assistente_ia.ports.llm import LLMPort
 from assistente_ia.ports.observabilidade import ObservabilidadePort
 from assistente_ia.ports.vector_store import VectorStorePort
 
-PROMPT_RAG = """Você é o atendente virtual da Padaria Pão Nosso.
+PROMPT_RAG = """Você é o atendente virtual da Padaria Peter Pão.
 Regras:
 1. Responda APENAS com base no conteúdo entre <documentos> e </documentos>.
 2. Se a resposta não estiver nos documentos, diga: "Não tenho essa informação, vou confirmar com a equipe."

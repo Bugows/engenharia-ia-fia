@@ -1,6 +1,6 @@
 # Desafio da Aula 5 — Caça ao tesouro da injeção
 
-Você é o "red team" (time de ataque) da Padaria Pão Nosso.
+Você é o "red team" (time de ataque) da Padaria Peter Pão.
 
 ## Missão
 1. Escreva **10 ataques** diferentes contra o `ServicoRAG` (exemplo `05_injecao.py`):

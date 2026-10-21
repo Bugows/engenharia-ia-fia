@@ -20,7 +20,7 @@ llm = criar_llm()  # a "tomada": OpenAILLM ou FakeLLM
 
 resposta = llm.responder(
     [
-        sistema("Você é o atendente simpático da Padaria Pão Nosso. Responda em até 2 frases."),
+        sistema("Você é o atendente simpático da Padaria Peter Pão. Responda em até 2 frases."),
         usuario("Bom dia! Tem pão de queijo saindo agora?"),
     ]
 )

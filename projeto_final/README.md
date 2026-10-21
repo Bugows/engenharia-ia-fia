@@ -4,7 +4,7 @@
 
 ## O que entregar
 Um assistente para **um caso de uso à sua escolha** (sua empresa, uma ONG, um negócio do bairro)
-ou para a **Pão Nosso S.A.** (rede com 5 lojas), construído sobre a arquitetura hexagonal do curso.
+ou para a **Peter Pão S.A.** (rede com 5 lojas), construído sobre a arquitetura hexagonal do curso.
 
 ### Requisitos obrigatórios
 1. **AI Canvas + Project Charter** (Aula 2) com custo mensal estimado e ROI.

@@ -28,7 +28,7 @@ class EcoLLM:
 
 def atender(llm: LLMPort, pergunta: str) -> str:
     """Regra da aplicação: só conhece a porta."""
-    return llm.responder([sistema("Atendente da Padaria Pão Nosso."), usuario(pergunta)]).texto
+    return llm.responder([sistema("Atendente da Padaria Peter Pão."), usuario(pergunta)]).texto
 
 
 pergunta = "Vocês aceitam pix?"

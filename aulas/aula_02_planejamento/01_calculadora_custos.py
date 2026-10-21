@@ -20,7 +20,7 @@ console = Console()
 # 1) Contexto que vai em toda pergunta (no RAG, só os trechos relevantes; aqui, o pior caso)
 contexto = (PASTA_DADOS / "padaria" / "faq.md").read_text(encoding="utf-8")
 contexto += (PASTA_DADOS / "padaria" / "cardapio.md").read_text(encoding="utf-8")
-prompt_sistema = "Você é o atendente virtual da Padaria Pão Nosso. Responda com base nos documentos."
+prompt_sistema = "Você é o atendente virtual da Padaria Peter Pão. Responda com base nos documentos."
 pergunta_media = "Oi, boa tarde! Que horas vocês abrem no sábado e aceitam pix?"
 
 entrada = tokens(prompt_sistema) + tokens(contexto) + tokens(pergunta_media)

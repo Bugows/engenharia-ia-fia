@@ -2,7 +2,7 @@
 
 Repositório-base do curso de extensão **Engenharia de Inteligência Artificial** (FIA).
 Em 8 aulas, você constrói, peça por peça, um **assistente corporativo** para a fictícia
-**Padaria Pão Nosso S.A.**, usando Python, LangChain, LangGraph, Deep Agents e arquitetura hexagonal.
+**Padaria Peter Pão S.A.**, usando Python, LangChain, LangGraph, Deep Agents e arquitetura hexagonal.
 
 Tudo funciona **sem chave** (modo fake, custo zero). Com uma chave da OpenAI, o mesmo código
 passa a usar o `gpt-5.4-mini` e o `text-embedding-3-small`, sem mudar uma linha da aplicação.

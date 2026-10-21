@@ -24,7 +24,7 @@ from langgraph.types import Command
 from assistente_ia.adapters.ferramentas.langchain_tools import para_langchain_lista
 from assistente_ia.ports.ferramentas import FerramentaPort
 
-PROMPT_GARCOM = """Você é o garçom virtual da Padaria Pão Nosso.
+PROMPT_GARCOM = """Você é o garçom virtual da Padaria Peter Pão.
 - Use SEMPRE as ferramentas para preços, totais, divisão de conta, horários e encomendas.
 - Nunca invente preços nem produtos.
 - Responda em português do Brasil, de forma simpática e curta."""

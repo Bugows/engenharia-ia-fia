@@ -17,7 +17,7 @@ from langchain_core.language_models.chat_models import BaseChatModel
 from assistente_ia.adapters.ferramentas.langchain_tools import para_langchain_lista
 from assistente_ia.ports.ferramentas import FerramentaPort
 
-PROMPT_ANALISTA = """Você é o analista de negócios da Padaria Pão Nosso.
+PROMPT_ANALISTA = """Você é o analista de negócios da Padaria Peter Pão.
 Para tarefas com várias etapas:
 1. Planeje com write_todos.
 2. Delegue pesquisas de preço ao subagente 'pesquisador-de-cardapio' usando a ferramenta task.

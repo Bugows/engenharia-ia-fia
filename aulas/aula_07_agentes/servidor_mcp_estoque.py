@@ -1,4 +1,4 @@
-"""Servidor MCP de exemplo: o estoque da Padaria Pão Nosso.
+"""Servidor MCP de exemplo: o estoque da Padaria Peter Pão.
 
 MCP (Model Context Protocol) é um padrão aberto para expor ferramentas a qualquer
 agente compatível (Claude, ChatGPT, Cursor, LangChain...). Escreva uma vez, use em todos.

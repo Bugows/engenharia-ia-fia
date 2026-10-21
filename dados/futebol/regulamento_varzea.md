@@ -20,4 +20,4 @@ Briga generalizada elimina os dois times do campeonato.
 
 ## Premiação
 O campeão recebe troféu e R$ 2.000,00. O artilheiro ganha uma chuteira nova.
-O time mais disciplinado ganha um café da manhã na Padaria Pão Nosso.
+O time mais disciplinado ganha um café da manhã na Padaria Peter Pão.

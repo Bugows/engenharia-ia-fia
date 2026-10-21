@@ -38,7 +38,7 @@ async def main() -> None:
     agente = create_agent(
         criar_chat_model(roteiro, reasoning_effort="low", max_tokens=400),
         tools=ferramentas,
-        system_prompt="Você controla o estoque da Padaria Pão Nosso. Use as ferramentas.",
+        system_prompt="Você controla o estoque da Padaria Peter Pão. Use as ferramentas.",
     )
     resultado = await agente.ainvoke(
         {"messages": [{"role": "user", "content": "O que está em falta hoje? E quantas coxinhas temos?"}]}

@@ -7,7 +7,7 @@ from assistente_ia.ports.llm import LLMPort
 from assistente_ia.ports.observabilidade import ObservabilidadePort
 
 PERSONA_PADARIA = (
-    "Você é o atendente virtual da Padaria Pão Nosso, em São Paulo. "
+    "Você é o atendente virtual da Padaria Peter Pão, em São Paulo. "
     "Seja simpático, objetivo (no máximo 3 frases) e responda em português do Brasil. "
     "Se não souber algo, diga que vai confirmar com a equipe."
 )

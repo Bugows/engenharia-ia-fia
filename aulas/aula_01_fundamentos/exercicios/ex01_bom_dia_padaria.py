@@ -16,7 +16,7 @@ PAO_DO_DIA = "pão de queijo"
 
 def montar_mensagens(nome_cliente: str, pao_do_dia: str) -> list[Mensagem]:
     """Devolva DUAS mensagens:
-    1) system: diga ao modelo que ele é o atendente da Padaria Pão Nosso;
+    1) system: diga ao modelo que ele é o atendente da Padaria Peter Pão;
     2) user: um pedido de bom-dia que contenha o nome do cliente E o pão do dia.
     """
     # TODO: substitua a linha abaixo pela lista de mensagens

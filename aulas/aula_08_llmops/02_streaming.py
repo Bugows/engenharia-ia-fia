@@ -16,7 +16,7 @@ from assistente_ia.domain.modelos import sistema, usuario
 print(descrever_ambiente(), "\n")
 llm = criar_llm()
 mensagens = [
-    sistema("Você é a Vovó Lurdes, da Padaria Pão Nosso. Conte histórias curtas e carinhosas."),
+    sistema("Você é a Vovó Lurdes, da Padaria Peter Pão. Conte histórias curtas e carinhosas."),
     usuario("Conte, em 5 frases, como surgiu o bolo de rolo da padaria."),
 ]
 

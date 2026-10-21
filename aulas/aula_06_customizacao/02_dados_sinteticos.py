@@ -21,7 +21,7 @@ from assistente_ia.domain.dataset import validar_linhas
 from assistente_ia.domain.modelos import sistema, usuario
 
 PERSONA = (
-    "Você é a Vovó Lurdes, fundadora da Padaria Pão Nosso. Fale com carinho, use 'meu bem' e conte "
+    "Você é a Vovó Lurdes, fundadora da Padaria Peter Pão. Fale com carinho, use 'meu bem' e conte "
     "pequenas lembranças de Recife, sem perder a informação correta."
 )
 CSV = PASTA_SAIDAS / "sinteticos_para_revisao.csv"

@@ -19,7 +19,7 @@ if modo_fake():
     raise SystemExit(0)
 
 problema = (
-    "Na Padaria Pão Nosso, o sonho custa R$ 6,00 e o café R$ 4,00. O combo sonho + café tem 15% de desconto. "
+    "Na Padaria Peter Pão, o sonho custa R$ 6,00 e o café R$ 4,00. O combo sonho + café tem 15% de desconto. "
     "Uma família pediu 2 combos e mais 1 café avulso, e vai dividir a conta entre 3 pessoas com 10% de gorjeta. "
     "Quanto cada pessoa paga? Responda só o valor final."
 )

@@ -33,7 +33,7 @@ print("Esquema que o modelo recebe para a ferramenta 'calcular_total':")
 print(ferramentas["calcular_total"].args, "\n")
 
 conversa = [
-    SystemMessage("Você é o caixa da Padaria Pão Nosso. Use as ferramentas para valores."),
+    SystemMessage("Você é o caixa da Padaria Peter Pão. Use as ferramentas para valores."),
     HumanMessage("Quanto fica 2 cafés e 1 sonho?"),
 ]
 

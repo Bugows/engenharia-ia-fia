@@ -1,7 +1,7 @@
-# AI Canvas — Assistente da Padaria Pão Nosso
+# AI Canvas — Assistente da Padaria Peter Pão
 # Valide com: uv run python aulas/aula_02_planejamento/03_validar_canvas.py
 
-projeto: Assistente de WhatsApp da Padaria Pão Nosso
+projeto: Assistente de WhatsApp da Padaria Peter Pão
 problema: >
   40% das 3.000 mensagens mensais do WhatsApp são perguntas repetidas (horário, preço, entrega),
   e a equipe do balcão perde cerca de 150 horas por mês respondendo.

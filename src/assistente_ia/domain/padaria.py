@@ -1,4 +1,4 @@
-"""Regras de negócio da Padaria Pão Nosso (empresa fictícia do curso).
+"""Regras de negócio da Padaria Peter Pão (empresa fictícia do curso).
 
 Tudo em Python puro: estas funções são usadas tanto pelo código "normal"
 quanto pelas ferramentas dos agentes (Aula 7).

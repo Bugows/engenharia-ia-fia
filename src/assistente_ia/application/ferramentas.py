@@ -1,4 +1,4 @@
-"""Ferramentas da Padaria Pão Nosso que os agentes podem usar.
+"""Ferramentas da Padaria Peter Pão que os agentes podem usar.
 
 Cada classe "encaixa" na FerramentaPort: tem `nome`, `descricao` e `executar(...)`.
 As regras de verdade ficam no domínio (domain/padaria.py).
