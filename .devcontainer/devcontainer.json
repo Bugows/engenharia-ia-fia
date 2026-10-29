@@ -10,7 +10,7 @@
   "remoteEnv": {
     "PATH": "${containerEnv:PATH}:/home/vscode/.local/bin"
   },
-  "postCreateCommand": "pip install --user uv && ~/.local/bin/uv sync && ~/.local/bin/uv run pre-commit install",
+  "postCreateCommand": "pip install --user uv && ~/.local/bin/uv sync && ~/.local/bin/uv run pre-commit install && ~/.local/bin/uv run python -m ipykernel install --user --name assistente-ia --display-name 'Python (assistente-ia)'",
   "postAttachCommand": "~/.local/bin/uv run python -m assistente_ia.config || true",
   "secrets": {
     "OPENAI_API_KEY": {
